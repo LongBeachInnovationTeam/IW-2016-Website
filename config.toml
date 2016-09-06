@@ -1,0 +1,59 @@
+baseurl = "http://innovatelb.com/innovation-week/"
+languageCode = "en-us"
+title = "Innovation Week 2016"
+theme = "hugo-creative-theme"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All events of the speakers are defined in their own files.
+	# You can events at 'data/speakers'.
+
+	# To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+	name = "Long Beach Innovation Weeks"
+	description = "Recognizing outstanding innovation in government."
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+	# Navigation
+	[params.navigation]
+
+		[params.navigation.links]
+			speakers 	= "Events"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		# To chanve the logo of the hero section, replace the image at 'layouts/partials/hero.html' with your own.
+		# It's best to define an all-white and colored logo in the creative.css
+
+		date = "October 6&dash;16 2016"
+		buttonText 	= "Events"
+
+  # Speakers modals
+	[params.speakers.modal]
+	  buttonText	= "Close"
+
+	# Speakers section
+	[params.speakers]
+		headline	= "Events"
+
+  # Aside section
+	[params.aside]
+		headline = "Gain insights from these amazing events during Innovation Week!"
+
+	# Contact section
+	[params.contact]
+		headline = "Have something innovative to show?"
+		description = "Want to put on an Innovation Week event or have any questions? That's great! Send us an email and we will get back to you as soon as possible."
+		email = "i-team@longbeach.gov"

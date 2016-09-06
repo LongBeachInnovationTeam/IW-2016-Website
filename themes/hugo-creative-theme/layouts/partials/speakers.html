@@ -1,0 +1,32 @@
+{{ "<!-- SPEAKERS -->" | safeHTML }}
+<section class="no-padding" id="speakers">
+    <div class="container" id="headline-container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.speakers.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            {{ range .Site.Data.speakers }}
+            <div class="col-lg-4 col-sm-6">
+                <a href="#eventModal{{ .modalID }}" class="event-box event-link" data-toggle="modal">
+                    <img src="img/speakers/{{ .img }}" class="img-responsive" alt="">
+                    <div class="event-box-caption">
+                        <div class="event-box-caption-content">
+                            <div class="speaker-category text-faded">
+                                {{ .speaker }}
+                            </div>
+                            <div class="speaker-name">
+                                {{ .title }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+{{ "<!-- HEADER -->" | safeHTML }}
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <img class="cis-logo" src="img/iw-logo.png">
+            <h1>{{ with .Site.Params.hero.date }}{{ . | markdownify }}{{ end }}</h1>
+            <hr class="light">
+            <a href="#speakers" class="btn btn-default btn-xl outline page-scroll">{{ with .Site.Params.hero.buttonText }}{{ . }}{{ end }}</a>
+        </div>
+    </div>
+</header>

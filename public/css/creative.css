@@ -320,11 +320,15 @@ header .header-content .header-content-inner p {
     height: 100%;
     text-align: center;
     color: #fff;
-    opacity: 0;
-    background: rgba(63,177,229,.9);
+    // opacity: 0;
+    background: rgba(0, 0, 0, .5);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+}
+
+.event-box :hover {
+    background: rgba(63, 177, 229, .4);
 }
 
 .event-box .event-box-caption .event-box-caption-content {

@@ -13,7 +13,7 @@
             {{ range .Site.Data.speakers }}
             <div class="col-md-4 col-sm-6">
                 <a href="#eventModal{{ .modalID }}" class="event-box event-link" data-toggle="modal">
-                    <img src="img/speakers/{{ .img }}" class="img-responsive" alt="">
+                    <img src="img/speakers/{{ .img }}" class="img-responsive" alt="{{ .title }}">
                     <div class="event-box-caption">
                         <div class="event-box-caption-content">
                             <div class="speaker-category text-faded">
@@ -21,6 +21,9 @@
                             </div>
                             <div class="speaker-name">
                                 {{ .title }}
+                            </div>
+                            <div class="text-faded">
+                                {{ .date }}
                             </div>
                         </div>
                     </div>

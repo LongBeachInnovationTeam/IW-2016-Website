@@ -1,11 +1,15 @@
-# CIS-Website
+# IW-2016-Website
 
 Built using [Hugo](https://gohugo.io/) and a modified version of the [Creative theme](http://themes.gohugo.io/creative/) provided by Hugo.
+
+## Required software
+
+The latest version of the [Hugo](https://gohugo.io/) static site generator.
 
 ## Modifying the site
 
 - Modify `config.toml` to modify the main text content of the site
-- Modify files in the `themes/hugo-creative-theme/layouts/` directory to change the HTML files to change presentation and rendering of the site elements
+- Modify files in the `/themes/hugo-creative-theme/layouts/` directory to change the HTML files to change presentation and rendering of the site elements
 - Run `hugo` on the command line to generate the site
 
 ### Adding events

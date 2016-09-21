@@ -14,7 +14,7 @@ The latest version of the [Hugo](https://gohugo.io/) static site generator.
 
 ### Adding events
 - Create a new file under `/data/speakers`
-- Add relevant event image to `/themes/hugo-creative-theme/static/img/speakers/`
+- Add relevant event image to `/themes/hugo-creative-theme/static/img/speakers/`. Images should be 650x350 px
 - Run `hugo` on the command line to generate the site
 
 An example of an event:
@@ -31,6 +31,8 @@ description: |
  A multi-line description of the event here.
 link: http://example.com/registration
 ```
+
+Note that `date` specifies a YAML date that will be used to render the events in ascending date order while `presentationDate` specifies the date presented on the webiste, e.g. "January 1, 2016 9am-4pm".
 
 ## Deployment
 

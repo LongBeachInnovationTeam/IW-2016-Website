@@ -10,7 +10,7 @@ Built using [Hugo](https://gohugo.io/) and a modified version of the [Creative t
 
 ### Adding events
 - Create a new file under `/data/speakers`
-- Add image to ``
+- Add relevant event image to `/themes/hugo-creative-theme/static/img/speakers/`
 - Run `hugo` on the command line to generate the site
 
 An example of an event:

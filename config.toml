@@ -37,7 +37,7 @@ theme = "hugo-creative-theme"
 		# To chanve the logo of the hero section, replace the image at 'layouts/partials/hero.html' with your own.
 		# It's best to define an all-white and colored logo in the creative.css
 
-		date = "October 6&dash;16 2016"
+		date = "October 2016"
 		buttonText 	= "Events"
 
   # Speakers modals

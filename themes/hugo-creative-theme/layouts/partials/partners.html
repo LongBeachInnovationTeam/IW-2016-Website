@@ -1,0 +1,22 @@
+{{ "<!-- PARTNERS -->" | safeHTML }}
+<section class="no-padding" id="partners">
+    <div class="container" id="headline-container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.partners.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            {{ range (sort .Site.Data.partners "name") }}
+            <div class="col-md-3">
+                <a href="{{ .link }}">
+                    <img class="img-responsive" src="img/partners/{{ .img }}" target="_blank" alt="{{ .name }}">
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
